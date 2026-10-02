@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Acentecom internal-tool light theme. Canonical palette sampled from
+       the NEW-UGC-Scripts (video-scripts.acentecom.com) tool — operator's
+       reference for the family. Icy-blue page background, white cards,
+       deep-navy (blue-900) primary, light-bluish sidebar. */
+    --background: 214 100% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 224 76% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 90% 92%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 214 50% 94%;
+    --muted-foreground: 215 20% 45%;
+
+    --accent: 214 90% 92%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 88%;
+    --input: 214 32% 82%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 213 27% 84%;
+  }
+
+  body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Modern SaaS button — softer corners, subtle shadow, scale on press,
+     no chunky borders. Operator: "All of the buttons in this entire
+     tool... should not look like an old computer. It should look like
+     a modern SaaS." */
+  .adv-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium;
+    @apply transition-all duration-150 ease-out;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+    @apply disabled:pointer-events-none disabled:opacity-50;
+    @apply h-9 px-3.5 py-2 bg-primary text-primary-foreground;
+    @apply shadow-sm hover:shadow-md hover:bg-primary/90 active:scale-[0.98] active:shadow-sm;
+  }
+  .adv-btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg text-sm font-medium;
+    @apply transition-all duration-150 ease-out;
+    @apply h-9 px-3.5 py-2 bg-card text-foreground border border-input;
+    @apply hover:bg-muted/50 hover:border-input/80 active:scale-[0.98];
+    @apply disabled:pointer-events-none disabled:opacity-50;
+  }
+  .adv-input {
+    @apply flex h-9 w-full rounded-lg border border-input bg-card px-3 py-1 text-sm;
+    @apply transition-all duration-150 ease-out;
+    @apply file:border-0 file:bg-transparent file:text-sm file:font-medium;
+    @apply placeholder:text-muted-foreground;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:border-primary/60;
+    @apply disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .adv-textarea {
+    @apply flex min-h-[60px] w-full rounded-lg border border-input bg-card px-3 py-2 text-sm;
+    @apply transition-all duration-150 ease-out;
+    @apply placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:border-primary/60;
+    @apply disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .adv-card {
+    @apply rounded-xl border bg-card text-card-foreground shadow-sm;
+  }
+  .adv-link {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+  /* Modernize the native <input type="file"> so it doesn't look like
+     Windows 95. */
+  input[type="file"] {
+    @apply text-sm text-muted-foreground;
+    @apply file:mr-3 file:rounded-md file:border-0 file:bg-muted file:px-3 file:py-1.5;
+    @apply file:text-xs file:font-medium file:text-foreground file:cursor-pointer;
+    @apply file:transition-colors hover:file:bg-muted/70;
+  }
+}

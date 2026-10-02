@@ -1,0 +1,385 @@
+{
+  "slug": "rejuvacare-doctor-discovery",
+  "name": "RejuvaCare Doctor-Discovery (Long-form Editorial)",
+  "reference_url": "https://www.smarthealthpractices.com/adv-rc-sm-lg-us-5",
+  "section_headers_count": 15,
+  "image_slot_count": 16,
+  "slots": [
+    {
+      "key": "HEADLINE",
+      "type": "text",
+      "required": true,
+      "description": "Big H1 headline \u2014 pain-point first."
+    },
+    {
+      "key": "BYLINE",
+      "type": "text",
+      "required": true,
+      "default": "Dr. [Author Name], [Specialty], MD"
+    },
+    {
+      "key": "MASTHEAD_TIMESTAMP",
+      "type": "text",
+      "required": false,
+      "default": "Sat. March 14th, 2026 | 11:11 am EST"
+    },
+    {
+      "key": "MASTHEAD_VIEWS",
+      "type": "text",
+      "required": false,
+      "default": "251.328"
+    },
+    {
+      "key": "BREADCRUMB_CATEGORY",
+      "type": "text",
+      "required": false,
+      "default": "Health"
+    },
+    {
+      "key": "AUDIENCE_PAIN",
+      "type": "text",
+      "required": true,
+      "description": "e.g. \"Shoulder Pain\" or \"Burning Feet\""
+    },
+    {
+      "key": "DOCTOR_NAME",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "DOCTOR_LAST_NAME",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "PRODUCT_NAME",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SALE_PRICE",
+      "type": "text",
+      "required": true,
+      "default": "$79.95"
+    },
+    {
+      "key": "REGULAR_PRICE",
+      "type": "text",
+      "required": true,
+      "default": "$199.95"
+    },
+    {
+      "key": "UNITS_REMAINING",
+      "type": "text",
+      "required": false,
+      "default": "4,127"
+    },
+    {
+      "key": "UNITS_PER_WEEK",
+      "type": "text",
+      "required": false,
+      "default": "500"
+    },
+    {
+      "key": "HERO_IMAGE_URL",
+      "type": "image",
+      "required": true,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_1_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_2_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_3_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_4_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_5_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_6_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_7_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_8_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_9_URL",
+      "type": "image",
+      "required": false,
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "SECTION_1_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_2_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_3_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_4_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_5_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_6_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_7_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_8_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_9_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_10_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_11_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_12_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_13_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_14_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "SECTION_15_HEADER",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "LEDE_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose between byline and first section header (the lede / opener)."
+    },
+    {
+      "key": "SECTION_1_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 1 (between SECTION_1_HEADER and SECTION_2_HEADER)."
+    },
+    {
+      "key": "SECTION_2_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 2 (between SECTION_2_HEADER and SECTION_3_HEADER)."
+    },
+    {
+      "key": "SECTION_3_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 3 (between SECTION_3_HEADER and SECTION_4_HEADER)."
+    },
+    {
+      "key": "SECTION_4_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 4 (between SECTION_4_HEADER and SECTION_5_HEADER)."
+    },
+    {
+      "key": "SECTION_5_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 5 (between SECTION_5_HEADER and SECTION_6_HEADER)."
+    },
+    {
+      "key": "SECTION_6_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 6 (between SECTION_6_HEADER and SECTION_7_HEADER)."
+    },
+    {
+      "key": "SECTION_7_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 7 (between SECTION_7_HEADER and SECTION_8_HEADER)."
+    },
+    {
+      "key": "SECTION_8_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 8 (between SECTION_8_HEADER and SECTION_9_HEADER)."
+    },
+    {
+      "key": "SECTION_9_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 9 (between SECTION_9_HEADER and SECTION_10_HEADER)."
+    },
+    {
+      "key": "SECTION_10_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 10 (between SECTION_10_HEADER and SECTION_11_HEADER)."
+    },
+    {
+      "key": "SECTION_11_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 11 (between SECTION_11_HEADER and SECTION_12_HEADER)."
+    },
+    {
+      "key": "SECTION_12_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 12 (between SECTION_12_HEADER and SECTION_13_HEADER)."
+    },
+    {
+      "key": "SECTION_13_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 13 (between SECTION_13_HEADER and SECTION_14_HEADER)."
+    },
+    {
+      "key": "SECTION_14_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 14 (between SECTION_14_HEADER and SECTION_15_HEADER)."
+    },
+    {
+      "key": "SECTION_15_BODY",
+      "type": "html",
+      "required": false,
+      "description": "Body prose for section 15 (between SECTION_15_HEADER and SECTION_16_HEADER)."
+    },
+    {
+      "key": "CTA_URL",
+      "type": "text",
+      "required": false,
+      "description": "The Voluum (or other) tracking URL the CTA button points at. Picked from brand.cta_presets.",
+      "default": "#"
+    },
+    {
+      "key": "CTA_LABEL",
+      "type": "text",
+      "required": false,
+      "description": "Visible CTA button label. Defaults to the original RejuvaCare label so existing tests still pass.",
+      "default": "Order Now"
+    },
+    {
+      "key": "PRIVACY_POLICY_URL",
+      "type": "text",
+      "required": false,
+      "description": "Footer privacy policy link.",
+      "default": "#"
+    },
+    {
+      "key": "TERMS_URL",
+      "type": "text",
+      "required": false,
+      "description": "Footer terms-of-service link.",
+      "default": "#"
+    },
+    {
+      "key": "IMG_10_URL",
+      "type": "image",
+      "required": false,
+      "description": "Additional brief image #10. Brief parser maps the (n+1)-th IMAGE PLACEHOLDER from the DOCX here.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_11_URL",
+      "type": "image",
+      "required": false,
+      "description": "Additional brief image #11. Brief parser maps the (n+1)-th IMAGE PLACEHOLDER from the DOCX here.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_12_URL",
+      "type": "image",
+      "required": false,
+      "description": "Additional brief image #12. Brief parser maps the (n+1)-th IMAGE PLACEHOLDER from the DOCX here.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_13_URL",
+      "type": "image",
+      "required": false,
+      "description": "Additional brief image #13. Brief parser maps the (n+1)-th IMAGE PLACEHOLDER from the DOCX here.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_14_URL",
+      "type": "image",
+      "required": false,
+      "description": "Additional brief image #14. Brief parser maps the (n+1)-th IMAGE PLACEHOLDER from the DOCX here.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "key": "IMG_15_URL",
+      "type": "image",
+      "required": false,
+      "description": "Additional brief image #15. Brief parser maps the (n+1)-th IMAGE PLACEHOLDER from the DOCX here.",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}
